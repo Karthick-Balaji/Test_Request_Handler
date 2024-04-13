@@ -1,0 +1,54 @@
+{
+  "name":"testSuite",
+  "doc":"Test File that's used for the Robot Framework Requests.",
+  "source":"C:\\Karthick_Balaji\\code\\Django\\hello\\testSuite.robot",
+  "tests":[
+    {
+      "name":"Open google.com",
+      "lineno":6,
+      "body":[
+        {
+          "name":"Open Browser",
+          "args":[
+            "browser='chrome'"
+          ],
+          "lineno":7
+        },
+        {
+          "name":"Go To",
+          "args":[
+            "url='https://google.com'"
+          ],
+          "lineno":8
+        }
+      ]
+    },
+    {
+      "name":"Open google.com 2",
+      "lineno":10,
+      "body":[
+        {
+          "name":"Open Browser",
+          "args":[
+            "https://google.com",
+            "chrome"
+          ],
+          "lineno":11
+        },
+        {
+          "name":"Close Browser",
+          "lineno":12
+        }
+      ]
+    }
+  ],
+  "resource":{
+    "imports":[
+      {
+        "type":"RESOURCE",
+        "name":"robotResource.resource",
+        "lineno":3
+      }
+    ]
+  }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-13T14:45:03.492860" rpa="false" schemaversion="5">
+<suite id="s1" name="Request" source="C:\Karthick_Balaji\code\Test_Request_Handler\test_request_handler\request.robot">
+<test id="s1-t1" name="Open google.com" line="7">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-13T14:45:04.423749" level="FAIL">ValueError: 'chrome' is not a supported browser.</msg>
+<arg>browser='chrome'</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2024-04-13T14:45:04.419749" elapsed="0.018998">ValueError: 'chrome' is not a supported browser.</status>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>url='https://google.com'</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-04-13T14:45:04.440746" elapsed="0.000999"/>
+</kw>
+<status status="FAIL" start="2024-04-13T14:45:04.412744" elapsed="0.031005">ValueError: 'chrome' is not a supported browser.</status>
+</test>
+<test id="s1-t2" name="Open google.com 2" line="11">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<arg>https://google.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-13T14:45:04.451746" elapsed="3.253228"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-04-13T14:45:07.705972" elapsed="2.174435"/>
+</kw>
+<status status="PASS" start="2024-04-13T14:45:04.446749" elapsed="5.434638"/>
+</test>
+<doc>Test File that's used for the Robot Framework Requests.</doc>
+<status status="FAIL" start="2024-04-13T14:45:03.498859" elapsed="6.384531"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="1" skip="0" id="s1" name="Request">Request</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
