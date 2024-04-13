@@ -1,8 +1,10 @@
 # Test_Request_Handler
 This is a Python project using Django for handling REST API requests and Robot Framework for keyword-driven acceptance testing.
 
+## How to run
 This project starts a web server that listens for a POST API call to the end point: http://127.0.0.1:8000/testai/tests/v1/execute
 The request body should be as follows:
+```
 {
     "tests": [
         {
@@ -21,10 +23,10 @@ The request body should be as follows:
         }
     ]
 }
-
+```
 The response would be of xml format stating the test statistics.
 Sample output for the above request is as follows
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-13T17:07:04.647188" rpa="false" schemaversion="5">
     <suite id="s1" name="Request" source="C:\Karthick_Balaji\code\Test_Request_Handler\test_request_handler\request.robot">
@@ -69,9 +71,9 @@ Sample output for the above request is as follows
     </statistics>
     <errors></errors>
 </robot>
-
-Required Dependencies:
-Python
-pip
-robot framework
-selenium
+```
+## Required Dependencies:
+- Python
+- pip
+- robot framework
+- selenium
