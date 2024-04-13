@@ -76,8 +76,8 @@ Resource  robotResource.resource
     response = HttpResponse()
     response.headers["Content-Type"] = "application/xml"
     response.status_code = 200
-    # outputFile = open('output.xml','r')
-    # responseBody = outputFile.read()
-    # outputFile.close()
-    response.write(result)
+    outputFile = open('output.xml','r')
+    responseBody = outputFile.read()
+    outputFile.close()
+    response.write(responseBody)
     return response
